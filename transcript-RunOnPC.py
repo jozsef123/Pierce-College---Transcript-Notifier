@@ -42,12 +42,13 @@ for r in range(runs):
 
         driver.switch_to.frame("ptifrmtgtframe")
 
-        driver.find_element_by_xpath('//*[@id="SSR_DUMMY_RECV1$sels$1$$0"]').click()
+        driver.find_element_by_xpath('//*[@id="SSR_DUMMY_RECV1$sels$1$$0"]').click()            # For 2019 Summer
+        #driver.find_element_by_xpath('//*[@id="SSR_DUMMY_RECV1$sels$0$$0"]').click()           # For 2019 Fall
         driver.find_element_by_xpath('//*[@id="DERIVED_SSS_SCT_SSR_PB_GO"]').click()
 
         name = "CLS_LINK$"
         grade = "STDNT_ENRL_SSV1_CRSE_GRADE_OFF$"
-        classesTaken = 1
+        classesTaken = 1                                                                        # Number of classes taken for that semester
         nameList = [None]*classesTaken
         gradeList = [None]*classesTaken
         gradeMSG = ""
