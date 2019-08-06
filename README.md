@@ -1,12 +1,12 @@
 # Pierce-College---Transcript-Notifier
 When script is ran, will sign into your SIS student portal to check for grade updates and send an email to you if there are any for a specific semester.
 
-#Notes 
+# Notes 
 Depending on the number of classes takenlines 51 will be changed
 Depending on the semester and the number of classes taken lines 45 will be swapped with 46 for Fall semester
 -Elements are changed on Pierce's website when there is a new semester added
 
-#Instructions
+# Instructions
 1) Make sure data.py and transcript-RunOnPC.py are in the same folder
 2) Will need to install python on computer
 3) Download geckodriver ->same file location as where the transcript-RunOnPC.py is located
