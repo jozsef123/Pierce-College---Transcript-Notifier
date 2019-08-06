@@ -23,12 +23,12 @@ import os
 import time       
          
 runs = 3
-for r in range(runs): 
+for r in range(runs):
     try:
         options = Options()
         options.headless = True
         driver = webdriver.Firefox(options=options)   
-        driver.get('https://sso.laccd.edu/adfs/ls/idpinitiatedsignon.aspx?loginToRp=epprod.laccd.edu')              #open pierce ssn portal
+        driver.get('https://sso.laccd.edu/adfs/ls/idpinitiatedsignon.aspx?loginToRp=epprod.laccd.edu')              #open pierce sis portal
         UserLogin = driver.find_element_by_id('userNameInput')                                                      #enter username
         UserLogin.send_keys(data.username)
         UserPassword = driver.find_element_by_id('passwordInput')                                                   #enter password
@@ -97,5 +97,5 @@ for r in range(runs):
         pass
     else:
         break
-os.system("taskkill /f /im firefox.exe")
+os.system("taskkill /f /im firefox.exe")                                                                # kill of instances of firefox
 print("program done")
