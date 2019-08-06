@@ -23,7 +23,7 @@ import os
 import time       
          
 runs = 3
-for r in range(runs):
+for r in range(runs): 
     try:
         options = Options()
         options.headless = True
