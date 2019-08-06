@@ -1,6 +1,10 @@
 # Pierce-College---Transcript-Notifier
 When script is ran, will sign into your SIS student portal to check for grade updates and send an email to you if there are any for a specific semester.
 
+# Warning
+Will close every instance of firefox running when program closes. Can be undone by commenting line 100, but will cause memory problems.
+-Replace line 100 with # os.system("taskkill /f /im firefox.exe")
+
 # Notes 
 Depending on the number of classes takenlines 51 will be changed
 Depending on the semester and the number of classes taken lines 45 will be swapped with 46 for Fall semester
