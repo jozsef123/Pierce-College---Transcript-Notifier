@@ -6,7 +6,7 @@ Will close every instance of firefox running when program closes. Can be undone 
 -Replace line 100 with # os.system("taskkill /f /im firefox.exe")
 
 # Notes 
-Depending on the number of classes takenlines 51 will be changed
+Depending on the number of classes taken lines 51 will be changed
 Depending on the semester and the number of classes taken lines 45 will be swapped with 46 for Fall semester
 -Elements are changed on Pierce's website when there is a new semester added
 
